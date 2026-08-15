@@ -27,3 +27,23 @@ not make it free of residual stellar or instrumental systematics.
 
 The saved row is the input actually used by `scripts/analyze_transit.py`; the
 analysis does not query a changing live service at run time.
+
+
+## Additional TESS sectors for robustness analysis
+
+All are unmodified standard-cadence SPOC light curves from the same [MAST TESS collection](https://doi.org/10.17909/t9-nmc8-f686).
+
+- Sector 12: `tess2019140104343-s0012-0000000066818296-0144-s_lc.fits` (2,041,920 bytes)
+  - MAST URI: `mast:TESS/product/tess2019140104343-s0012-0000000066818296-0144-s_lc.fits`
+  - SHA-256: `110b82c33046c716e86c09051e35bb1f55414f45f8a9122d3aaeecdcbf729aea`
+- Sector 38: `tess2021118034608-s0038-0000000066818296-0209-s_lc.fits` (1,952,640 bytes)
+  - MAST URI: `mast:TESS/product/tess2021118034608-s0038-0000000066818296-0209-s_lc.fits`
+  - SHA-256: `4836a46e320309dd76860d9c09187fa179b012c7b1dd7dacf7b74a5d091c8464`
+
+## Published planetary spectrum
+
+- Archive record: [10.5281/zenodo.14003330](https://zenodo.org/records/14003330)
+- Data type: emission; instrument: JWST NIRISS/SOSS
+- `data/spectra/transitspectroscopy_reduction_negative.dat` — SHA-256 `6a73427b23ba2e285d6e5809c7a8eb9859ad582c64d41ecec487ebda13b7e621`
+- `data/spectra/ahsoka_reduction.dat` — SHA-256 `82518db351fab231ad138f358427d4af44536dead1ca5717f01e5ed11418200b`
+- `data/spectra/supreme_spoon_reduction.dat` — SHA-256 `8b3200bf61ba929e81528d9fba72fe9542b69bb9737a80ff610f62cc6adddf30`
