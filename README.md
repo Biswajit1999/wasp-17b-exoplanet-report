@@ -1,10 +1,20 @@
-# WASP-17 b — Real TESS Transit Report
+# WASP-17 b: Water Emission from an Inflated Hot Jupiter
 
+<!-- TARGET-IDENTITY-START -->
+<p align="center">
+  <img src="assets/artist_concept.webp" alt="Artist's interpretation of WASP-17 b near its host star" width="900">
+</p>
+
+<p align="center"><em>AI-generated artist's interpretation informed by the measured system properties; not a direct image.</em></p>
+
+**Inflated hot Jupiter · dayside emission · JWST + TESS**
+
+An exceptionally inflated giant planet examined through a corrected TESS transit and three independent reductions of its JWST/NIRISS dayside emission spectrum.
+<!-- TARGET-IDENTITY-END -->
 <p align="center">
   <img src="figures/wasp17b_tess_transit.png" alt="Phase-folded real TESS transit light curve of WASP-17 b" width="760">
 </p>
 
-One real public TESS SPOC light curve; one historical NASA Exoplanet Archive ephemeris; one timing-adjusted, limb-darkened transit fit.
 
 **[Open the full report](https://biswajit1999.github.io/wasp-17b-exoplanet-report/)** — the live GitHub Pages version.
 
@@ -21,6 +31,7 @@ pip install -r requirements.txt
 python scripts/analyze_transit.py
 python scripts/analyze_multisector.py
 python scripts/analyze_spectrum.py
+python scripts/analyze_atmospheric_evidence.py
 pytest tests/ -v
 ```
 
@@ -66,6 +77,22 @@ Three independent published NIRISS/SOSS reductions are plotted and tested agains
 
 Source: [10.5281/zenodo.14003330](https://zenodo.org/records/14003330) (JWST NIRISS/SOSS). Exact files and checksums are in [`data/SOURCE.md`](data/SOURCE.md); complete numerical results are in [`figures/spectrum_statistics.csv`](figures/spectrum_statistics.csv).
 <!-- SPECTRUM-UPGRADE-END -->
+
+<!-- ATMOSPHERE-EVIDENCE-START -->
+## Atmospheric evidence: detection, limit, or unknown?
+
+<p align="center"><img src="figures/molecular_evidence.png" alt="Source-graded atmospheric evidence for WASP-17 b" width="820"></p>
+
+All three archived reductions reject a wavelength-independent dayside spectrum. The molecular attribution is taken from the paper's atmospheric retrieval rather than inferred from the flat-spectrum test reproduced here.
+
+| Species | Status | Evidence | Basis |
+|---|---|---|---|
+| H2O | reported detection | 6.4 sigma | peer-reviewed/preprint retrieval |
+| CO / CO2 | not established here | no repository retrieval | wavelength structure alone is non-specific |
+| O2 | no evidence | not reported | no molecular-oxygen inference |
+
+Primary source: [Gressier et al. 2024, JWST-TST DREAMS](https://arxiv.org/abs/2410.08149). The table is also available as [`data/atmospheric_evidence.csv`](data/atmospheric_evidence.csv). Oxygen-bearing species such as H2O, CO2, and SO2 are **not** evidence for molecular oxygen (O2) or a biosignature.
+<!-- ATMOSPHERE-EVIDENCE-END -->
 
 ## System context
 

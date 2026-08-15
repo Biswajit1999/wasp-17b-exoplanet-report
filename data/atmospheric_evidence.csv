@@ -1,0 +1,4 @@
+species,status,evidence,basis,source_label,source_url
+H2O,reported detection,6.4 sigma,peer-reviewed/preprint retrieval,"Gressier et al. 2024, JWST-TST DREAMS",https://arxiv.org/abs/2410.08149
+CO / CO2,not established here,no repository retrieval,wavelength structure alone is non-specific,"Gressier et al. 2024, JWST-TST DREAMS",https://arxiv.org/abs/2410.08149
+O2,no evidence,not reported,no molecular-oxygen inference,"Gressier et al. 2024, JWST-TST DREAMS",https://arxiv.org/abs/2410.08149
