@@ -1,0 +1,2 @@
+pl_name,hostname,ra,dec,pl_orbper,pl_tranmid,pl_trandur,pl_rade,pl_bmasse,pl_eqt,pl_orbsmax,sy_dist,sy_tmag,st_teff,st_rad,st_mass,disc_year,discoverymethod,disc_refname,disc_pubdate,disc_facility
+WASP-17 b,WASP-17,239.9622479,-28.0617941,3.73543,2454592.80154,4.4232,20.96083,247.9074,1755.0,0.0515,405.908,11.0261,6550.0,1.49,2.28,2009,Transit,<a refstr=ANDERSON_ET_AL__2010 href=https://ui.adsabs.harvard.edu/abs/2010ApJ...709..159A/abstract target=ref> Anderson et al. 2010 </a>,2010-01,SuperWASP
