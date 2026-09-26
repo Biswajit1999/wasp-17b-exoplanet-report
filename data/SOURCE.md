@@ -44,6 +44,10 @@ All are unmodified standard-cadence SPOC light curves from the same [MAST TESS c
 
 - Archive record: [10.5281/zenodo.14003330](https://zenodo.org/records/14003330)
 - Data type: emission; instrument: JWST NIRISS/SOSS
-- `data/spectra/transitspectroscopy_reduction_negative.dat` — SHA-256 `6a73427b23ba2e285d6e5809c7a8eb9859ad582c64d41ecec487ebda13b7e621`
-- `data/spectra/ahsoka_reduction.dat` — SHA-256 `82518db351fab231ad138f358427d4af44536dead1ca5717f01e5ed11418200b`
-- `data/spectra/supreme_spoon_reduction.dat` — SHA-256 `8b3200bf61ba929e81528d9fba72fe9542b69bb9737a80ff610f62cc6adddf30`
+- `data/spectra/transitspectroscopy_reduction_negative.dat` — SHA-256 `ed4f3e84e1cfdaa6b999e3458e2a37081c05db4e91679bf889d8bf3cc0936d46`
+- `data/spectra/ahsoka_reduction.dat` — SHA-256 `7db13a522679b1b79316cc4997cd80eeadb3125625123af967fb51a54634a49c`
+- `data/spectra/supreme_spoon_reduction.dat` — SHA-256 `a18927ffea5a9f73e58020f8ab134294f06a538c3aadbbc80569fd59f124d65c`
+
+The earlier manifest listed three incorrect spectrum hashes; the values above
+were recomputed byte-for-byte from the committed files and are enforced by the
+test suite. The files themselves were not modified by this correction.
