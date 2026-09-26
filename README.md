@@ -61,7 +61,6 @@ The script keeps finite `QUALITY == 0` cadences, normalizes `PDCSAP_FLUX`, and a
 
 The timing-adjusted transit is strongly preferred by ΔBIC = 30092.5. Its fitted midpoint is +1.444 hours from the historical prediction; the model's mid-transit depth is 16785.5 ± 100.3 ppm. A fitted timing correction can diagnose ephemeris drift, but this single-sector fit is not a replacement for a global transit-timing analysis.
 
-<!-- MULTISECTOR-UPGRADE-START -->
 ## Multi-sector robustness and correlated noise
 
 The archive prediction was timing-adjusted independently in 2 fitted sector(s) (S12, S38), of which 2 meet Delta BIC >= 10. Formal depth errors were inflated by sqrt(max(reduced chi-square, 1)) times the residual time-averaging beta factor (observed range 1.28-1.46). The robust inverse-variance model depth across supported sectors is 16828.0 +/- 89.3 ppm; Cochran Q = 0.14 for 1 dof (p = 0.7131). These scaled errors address underestimated scatter and short-timescale correlation, but they are not a full Gaussian-process or physical limb-darkened transit fit.
@@ -73,19 +72,35 @@ The archive prediction was timing-adjusted independently in 2 fitted sector(s) (
 <p align="center"><img src="figures/wasp17b_noise_diagnostics.png" alt="Residual RMS time-averaging diagnostic for WASP-17 b" width="760"></p>
 
 The per-sector table is in [`figures/multisector_statistics.csv`](figures/multisector_statistics.csv). Regenerate all three figures with `python scripts/analyze_multisector.py`.
-<!-- MULTISECTOR-UPGRADE-END -->
-
-<!-- SPECTRUM-UPGRADE-START -->
 ## Published planetary spectrum
 
 <p align="center"><img src="figures/wasp17b_published_spectrum.png" alt="Published emission spectrum of WASP-17 b" width="760"></p>
 
-Three independent published NIRISS/SOSS reductions are plotted and tested against their own weighted-flat spectra. Showing all reductions makes pipeline-dependent scatter visible; no molecular abundance is inferred from these flatness tests.
+Three published NIRISS/SOSS reductions of the **same eclipse observation** are
+plotted and tested against their own weighted-flat spectra. All three reject a
+wavelength-independent eclipse depth under their supplied marginal errors
+(reduced chi-square 12.45, 8.68, and 10.35), establishing spectral structure
+but not identifying a molecule.
+
+Pairwise median absolute pipeline differences are 61.5, 41.9, and 41.7 ppm.
+If the reported errors were independent, their median absolute normalized
+differences would be 0.68, 0.48, and 0.42. Because the reductions share the
+same photons and systematics, these are explicitly descriptive independence
+references—not formal consistency probabilities.
+
+<p align="center"><img src="figures/wasp17b_pipeline_differences.png" alt="Pairwise wavelength-dependent differences between three reductions of the same WASP-17 b eclipse" width="760"></p>
+
+Negative eclipse depths are retained: 21/155 transitspectroscopy bins and
+25/152 supreme-SPOON bins are negative, all below 1 µm, while Ahsoka has none.
+This directly exposes the optical prior sensitivity emphasized by the source
+paper rather than censoring physically permissible noise realizations.
 
 Source: [10.5281/zenodo.14003330](https://zenodo.org/records/14003330) (JWST NIRISS/SOSS). Exact files and checksums are in [`data/SOURCE.md`](data/SOURCE.md); complete numerical results are in [`figures/spectrum_statistics.csv`](figures/spectrum_statistics.csv).
-<!-- SPECTRUM-UPGRADE-END -->
 
-<!-- ATMOSPHERE-EVIDENCE-START -->
+See [`docs/METHODS.md`](docs/METHODS.md),
+[`docs/VALIDATION.md`](docs/VALIDATION.md), and
+[`figures/pipeline_agreement.csv`](figures/pipeline_agreement.csv).
+
 ## Atmospheric evidence: detection, limit, or unknown?
 
 <p align="center"><img src="figures/molecular_evidence.png" alt="Source-graded atmospheric evidence for WASP-17 b" width="820"></p>
@@ -98,8 +113,7 @@ All three archived reductions reject a wavelength-independent dayside spectrum. 
 | CO / CO2 | not established here | no repository retrieval | wavelength structure alone is non-specific |
 | O2 | no evidence | not reported | no molecular-oxygen inference |
 
-Primary source: [Gressier et al. 2024, JWST-TST DREAMS](https://arxiv.org/abs/2410.08149). The table is also available as [`data/atmospheric_evidence.csv`](data/atmospheric_evidence.csv). Oxygen-bearing species such as H2O, CO2, and SO2 are **not** evidence for molecular oxygen (O2) or a biosignature.
-<!-- ATMOSPHERE-EVIDENCE-END -->
+Primary source: [Gressier et al. 2025, JWST-TST DREAMS](https://doi.org/10.3847/1538-3881/ad97bf). The table is also available as [`data/atmospheric_evidence.csv`](data/atmospheric_evidence.csv). Oxygen-bearing species such as H2O, CO2, and SO2 are **not** evidence for molecular oxygen (O2) or a biosignature.
 
 ## System context
 
@@ -119,6 +133,8 @@ Primary source: [Gressier et al. 2024, JWST-TST DREAMS](https://arxiv.org/abs/24
 - Midpoint freedom corrects accumulated ephemeris error but introduces a bounded timing search. ΔBIC, not a naïve one-parameter p-value, is used as the support gate.
 - PDCSAP processing, dilution, stellar variability, transit-timing variations, and long-timescale covariance can still bias the inferred geometry.
 - Radius ratio, impact parameter, and fixed limb darkening are correlated. Published global fits with physical priors and simultaneous detrending remain authoritative.
+- The three NIRISS spectra share one observation, so their errors and systematics are correlated; pairwise quadrature normalization is only an independence reference.
+- Flat-spectrum rejection establishes wavelength structure, not water. The 6.4-sigma H2O claim belongs to the source retrieval and depends on pressure-temperature parameterization and treatment of negative optical eclipse depths.
 
 ## Repository structure
 
@@ -140,6 +156,7 @@ LICENSE                     MIT
 2. Ricker, G. R. et al. (2015), *Transiting Exoplanet Survey Satellite (TESS)*, JATIS 1, 014003, [doi:10.1117/1.JATIS.1.1.014003](https://doi.org/10.1117/1.JATIS.1.1.014003).
 3. TESS Team, *TESS Light Curves — All Sectors*, MAST, [doi:10.17909/t9-nmc8-f686](https://doi.org/10.17909/t9-nmc8-f686); Sector 12 used here.
 4. [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/), `pscomppars` TAP row retrieved 2026-08-15.
+5. Gressier, A. et al. (2025), *The Astronomical Journal* 169, 57, [doi:10.3847/1538-3881/ad97bf](https://doi.org/10.3847/1538-3881/ad97bf).
 
 ## Author
 
