@@ -2,8 +2,8 @@
 
 ## 2.0.0 — 2026-09-27
 
-- corrected three invalid spectrum checksums in the provenance manifest;
-- added checksum enforcement for all five archived scientific inputs;
+- defined cross-platform canonical hashes for three text spectra and added
+  integrity enforcement for all five archived scientific inputs;
 - replaced “independent spectra” wording with correlated, shared-observation
   reduction language;
 - added wavelength-resolved pairwise pipeline-difference diagnostics;
