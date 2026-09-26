@@ -16,7 +16,7 @@
 
 **Inflated hot Jupiter · dayside emission · JWST + TESS**
 
-An exceptionally inflated giant planet examined through a corrected TESS transit and three independent reductions of its JWST/NIRISS dayside emission spectrum.
+An exceptionally inflated giant planet examined through a corrected TESS transit and three correlated reductions of one JWST/NIRISS dayside eclipse.
 <!-- TARGET-IDENTITY-END -->
 <p align="center">
   <img src="figures/wasp17b_tess_transit.png" alt="Phase-folded real TESS transit light curve of WASP-17 b" width="760">
