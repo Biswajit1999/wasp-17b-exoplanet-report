@@ -1,0 +1,340 @@
+{
+  "schema": 1,
+  "project": "WASP-17 b: Water Emission from an Inflated Hot Jupiter",
+  "repository": "https://github.com/Biswajit1999/wasp-17b-exoplanet-report",
+  "files": [
+    {
+      "label": "Data source notes",
+      "path": "data/SOURCE.md",
+      "role": "Data and provenance",
+      "bytes": 3293,
+      "sha256": "701a2cb553f53e71e3e48e508e4f40d9a01fde042cc948c69f33fa8e53306ac1",
+      "hash_basis": "LF-normalised text",
+      "format": "MD"
+    },
+    {
+      "label": "Project methods",
+      "path": "docs/METHODS.md",
+      "role": "Data and provenance",
+      "bytes": 1502,
+      "sha256": "ad28ee34591429032cb068e4ba42f22c7f958fc325784880c3df484addf14a46",
+      "hash_basis": "LF-normalised text",
+      "format": "MD"
+    },
+    {
+      "label": "Atmospheric evidence",
+      "path": "data/atmospheric_evidence.csv",
+      "role": "Data and provenance",
+      "bytes": 521,
+      "sha256": "f6fa9862f30dcec6b9cdf2c0d1c72257e0d97a9cbbdfb91681122c8cbe98edd0",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 3,
+      "columns": 6,
+      "headers": [
+        "species",
+        "status",
+        "evidence",
+        "basis",
+        "source_label",
+        "source_url"
+      ],
+      "preview": [
+        [
+          "H2O",
+          "reported detection",
+          "6.4 sigma",
+          "peer-reviewed atmospheric retrieval",
+          "Gressier et al. 2025, JWST-TST DREAMS",
+          "https://doi.org/10.3847/1538-3881/ad97bf"
+        ],
+        [
+          "CO / CO2",
+          "not established here",
+          "no repository retrieval",
+          "wavelength structure alone is non-specific",
+          "Gressier et al. 2025, JWST-TST DREAMS",
+          "https://doi.org/10.3847/1538-3881/ad97bf"
+        ],
+        [
+          "O2",
+          "no evidence",
+          "not reported",
+          "no molecular-oxygen inference",
+          "Gressier et al. 2025, JWST-TST DREAMS",
+          "https://doi.org/10.3847/1538-3881/ad97bf"
+        ]
+      ]
+    },
+    {
+      "label": "System parameters",
+      "path": "data/system_parameters.csv",
+      "role": "Data and provenance",
+      "bytes": 501,
+      "sha256": "6c4194811b359da83de360478ba46e280b6b062fc377375548eed988233318fa",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 1,
+      "columns": 21,
+      "headers": [
+        "pl_name",
+        "hostname",
+        "ra",
+        "dec",
+        "pl_orbper",
+        "pl_tranmid",
+        "pl_trandur"
+      ],
+      "preview": [
+        [
+          "WASP-17 b",
+          "WASP-17",
+          "239.9622479",
+          "-28.0617941",
+          "3.73543",
+          "2454592.80154",
+          "4.4232"
+        ]
+      ]
+    },
+    {
+      "label": "Tess2019140104343 s0012 0000000066818296 0144 s lc",
+      "path": "data/tess2019140104343-s0012-0000000066818296-0144-s_lc.fits",
+      "role": "Data and provenance",
+      "bytes": 2041920,
+      "sha256": "110b82c33046c716e86c09051e35bb1f55414f45f8a9122d3aaeecdcbf729aea",
+      "hash_basis": "exact bytes",
+      "format": "FITS"
+    },
+    {
+      "label": "Tess2021118034608 s0038 0000000066818296 0209 s lc",
+      "path": "data/tess2021118034608-s0038-0000000066818296-0209-s_lc.fits",
+      "role": "Data and provenance",
+      "bytes": 1952640,
+      "sha256": "4836a46e320309dd76860d9c09187fa179b012c7b1dd7dacf7b74a5d091c8464",
+      "hash_basis": "exact bytes",
+      "format": "FITS"
+    },
+    {
+      "label": "Ahsoka reduction",
+      "path": "data/spectra/ahsoka_reduction.dat",
+      "role": "Data and provenance",
+      "bytes": 15179,
+      "sha256": "82518db351fab231ad138f358427d4af44536dead1ca5717f01e5ed11418200b",
+      "hash_basis": "exact bytes",
+      "format": "DAT"
+    },
+    {
+      "label": "Summary statistics",
+      "path": "figures/summary_statistics.csv",
+      "role": "Tables and numerical results",
+      "bytes": 1161,
+      "sha256": "afda85838900efb3abff8f27d4f3dec640a72719388a32817b0698a7cd92bd5e",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 36,
+      "columns": 3,
+      "headers": [
+        "quantity",
+        "value",
+        "unit"
+      ],
+      "preview": [
+        [
+          "sector",
+          "12",
+          "TESS sector"
+        ],
+        [
+          "period_days",
+          "3.73543",
+          "days; NASA Exoplanet Archive"
+        ],
+        [
+          "published_duration_hours",
+          "4.4232",
+          "hours; NASA Exoplanet Archive"
+        ],
+        [
+          "a_over_rstar",
+          "7.43231409396",
+          "fixed from saved a and stellar radius"
+        ]
+      ]
+    },
+    {
+      "label": "Spectrum statistics",
+      "path": "figures/spectrum_statistics.csv",
+      "role": "Tables and numerical results",
+      "bytes": 737,
+      "sha256": "3e03d76b2b950c923a6bd6d5c441bf8144fa768031c1c850c69777a15621c378",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 3,
+      "columns": 14,
+      "headers": [
+        "bins_below_1_micron",
+        "chi2",
+        "comparison",
+        "dof",
+        "mean_ppm",
+        "median_error_ppm",
+        "n"
+      ],
+      "preview": [
+        [
+          "52",
+          "1916.5421937662575",
+          "transitspectroscopy vs weighted flat",
+          "154",
+          "165.0194603234298",
+          "58.45145909259286",
+          "155"
+        ],
+        [
+          "48",
+          "1302.2603023098877",
+          "Ahsoka vs weighted flat",
+          "150",
+          "186.21213089281065",
+          "68.55648546979964",
+          "151"
+        ],
+        [
+          "49",
+          "1562.3246214813926",
+          "supreme-SPOON vs weighted flat",
+          "151",
+          "147.41010940140046",
+          "63.00443980026565",
+          "152"
+        ]
+      ]
+    },
+    {
+      "label": "Multisector statistics",
+      "path": "figures/multisector_statistics.csv",
+      "role": "Tables and numerical results",
+      "bytes": 515,
+      "sha256": "a200bf9c087ca38f4932d34585ed1663f98f7c033146c254394300882e86be5e",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 2,
+      "columns": 13,
+      "headers": [
+        "sector",
+        "filename",
+        "transit_events",
+        "n_points",
+        "transit_supported",
+        "delta_bic",
+        "timing_shift_hours"
+      ],
+      "preview": [
+        [
+          "12",
+          "tess2019140104343-s0012-0000000066818296-0144-s_lc.fits",
+          "6",
+          "4044",
+          "True",
+          "30092.46345",
+          "1.444394973"
+        ],
+        [
+          "38",
+          "tess2021118034608-s0038-0000000066818296-0209-s_lc.fits",
+          "7",
+          "5564",
+          "True",
+          "39461.24364",
+          "1.694508233"
+        ]
+      ]
+    },
+    {
+      "label": "Pipeline agreement",
+      "path": "figures/pipeline_agreement.csv",
+      "role": "Tables and numerical results",
+      "bytes": 656,
+      "sha256": "befe76f321746d566fda2d6bbf0c9a5cbd087e0f67753c30e4b55f2062a0fd8f",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 3,
+      "columns": 9,
+      "headers": [
+        "fraction_abs_independence_z_gt_2",
+        "median_abs_independence_z",
+        "median_absolute_difference_ppm",
+        "median_difference_ppm",
+        "n_overlap",
+        "pair",
+        "rms_difference_ppm"
+      ],
+      "preview": [
+        [
+          "0.059602649006622516",
+          "0.6821688766917021",
+          "61.53050658201106",
+          "-6.9314417574283596",
+          "151",
+          "transitspectroscopy - Ahsoka",
+          "140.70381889663344"
+        ],
+        [
+          "0.032679738562091505",
+          "0.48077753441214277",
+          "41.89058559978856",
+          "11.262050640399835",
+          "153",
+          "transitspectroscopy - supreme-SPOON",
+          "114.27627017254305"
+        ],
+        [
+          "0.03333333333333333",
+          "0.4207874845931073",
+          "41.65038891458922",
+          "20.182532898756477",
+          "150",
+          "Ahsoka - supreme-SPOON",
+          "111.22508969486643"
+        ]
+      ]
+    },
+    {
+      "label": "Wasp17b published spectrum",
+      "path": "figures/wasp17b_published_spectrum.png",
+      "role": "Figures",
+      "bytes": 177393,
+      "sha256": "69057e64be0dde745ad4c5581add74004df0e8a4feb9dbe99e52ca2d87253cbc",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Molecular evidence",
+      "path": "figures/molecular_evidence.png",
+      "role": "Figures",
+      "bytes": 71118,
+      "sha256": "58604752ca348567d45f412ae6c835e413fd5f3c90eda81aaba4f36cbe27b2c9",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Wasp17b depth consistency",
+      "path": "figures/wasp17b_depth_consistency.png",
+      "role": "Figures",
+      "bytes": 62911,
+      "sha256": "05040f1949bfc871fbc84517dfa1d1f339b06772d4728b7f9f94b51fc64f11a8",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Wasp17b multisector transits",
+      "path": "figures/wasp17b_multisector_transits.png",
+      "role": "Figures",
+      "bytes": 114213,
+      "sha256": "f0dd9c18d579e434ad124b452f56d7bc4058af4619996ebe716e2cf6c235132d",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "project": "WASP-17 b: Water Emission from an Inflated Hot Jupiter",
+  "repository": "https://github.com/Biswajit1999/wasp-17b-exoplanet-report",
+  "files": [
+    {
+      "label": "Data source notes",
+      "path": "data/SOURCE.md",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Project methods",
+      "path": "docs/METHODS.md",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Atmospheric evidence",
+      "path": "data/atmospheric_evidence.csv",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "System parameters",
+      "path": "data/system_parameters.csv",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Tess2019140104343 s0012 0000000066818296 0144 s lc",
+      "path": "data/tess2019140104343-s0012-0000000066818296-0144-s_lc.fits",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Tess2021118034608 s0038 0000000066818296 0209 s lc",
+      "path": "data/tess2021118034608-s0038-0000000066818296-0209-s_lc.fits",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Ahsoka reduction",
+      "path": "data/spectra/ahsoka_reduction.dat",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Summary statistics",
+      "path": "figures/summary_statistics.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Spectrum statistics",
+      "path": "figures/spectrum_statistics.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Multisector statistics",
+      "path": "figures/multisector_statistics.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Pipeline agreement",
+      "path": "figures/pipeline_agreement.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Wasp17b published spectrum",
+      "path": "figures/wasp17b_published_spectrum.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Molecular evidence",
+      "path": "figures/molecular_evidence.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Wasp17b depth consistency",
+      "path": "figures/wasp17b_depth_consistency.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Wasp17b multisector transits",
+      "path": "figures/wasp17b_multisector_transits.png",
+      "role": "Figures"
+    }
+  ]
+}
